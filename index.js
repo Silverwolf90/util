@@ -7,10 +7,11 @@ export const log =
   (arg) =>
     console.log(arg) || arg;
 
-export const trace = curry((msg, val) => {
-  console.log(msg, val);
-  return val;
-});
+export const trace = curry(
+  (msg, val) => {
+    console.log(msg, val);
+    return val;
+  });
 
 export const debug =
   (arg) => {
